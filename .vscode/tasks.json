@@ -32,10 +32,7 @@
     },
     {
       "taskName": "build:prod",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": "build",
       "command": "webpack",
       "args": [
         "--env=prod"
@@ -43,6 +40,7 @@
     },
     {
       "taskName": "build:dev",
+      "group": "build",
       "command": "webpack",
       "args": [
         "--env=dev"
@@ -50,6 +48,10 @@
     },
     {
       "taskName": "start",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "command": "npm",
       "args": [
         "start"
