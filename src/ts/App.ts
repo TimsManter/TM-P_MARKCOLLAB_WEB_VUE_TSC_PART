@@ -9,9 +9,9 @@ import "./../scss/style.scss";
 import App from "../vue/App.vue";
 import DocumentPage from "../vue/pages/DocumentPage.vue";
 
-Axios.defaults.baseURL = "http://localhost:5000/api";
+Axios.defaults.baseURL = "http://markcollabapi.azurewebsites.net/api";
 Axios.defaults.headers.common["Accept"] = "application/json";
-Axios.defaults.headers.common["Access-Control-Allow-Origin"] = "http://localhost:8080";
+Axios.defaults.headers.common["Access-Control-Allow-Origin"] = "http://markcollabvue.azurewebsites.net";
 Axios.defaults.headers.patch["Content-Type"] = "text/plain";
 
 Vue.use(VueRouter);
