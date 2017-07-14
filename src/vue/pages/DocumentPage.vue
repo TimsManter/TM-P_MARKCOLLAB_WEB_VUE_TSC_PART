@@ -65,16 +65,17 @@ export default class DocumentPage extends Vue {
   saved: boolean = true;
 
   get contentMd(): string {
-    if (this.currentDoc.content === null) { return ""; }
+    if (this.currentDoc.content === undefined) { return ""; }
     return this.currentDoc.content;
   }
 
   set contentMd(val: string) {
-    if (this.currentDoc.content === null) { return; }
+    if (this.currentDoc.content === undefined) { return; }
     this.currentDoc.content = val;
   }
 
   get contentHtml(): string {
+    if (this.currentDoc.content === undefined) { return ""; }
     if (this.currentDoc.content === null) { return ""; }
     return Marked(this.currentDoc.content);
   }
