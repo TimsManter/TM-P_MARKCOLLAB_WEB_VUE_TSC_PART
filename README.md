@@ -1,13 +1,14 @@
-# TM-P_MARKCOLLAB_WEB_ASC_CSH_PART
+# MarkCollab Editor
 
 * @Author: TimsManter
 * @AuthorSite: [TimsManter.NET](http://timsmanter.net/)
-* @CreateDate: 2017-05
+* @CreateDate: 2017-06
 * @Editor: Visual Studio Code
 * @Language: TypeScript
 * @Framework: Vue.js
 * @Locale: en_US
-* @Status: Dev
+* @License: n/a yet
+* @Status: Dev | Active
 
 <!-- TOC -->
 
@@ -18,6 +19,9 @@
 
 ## Overview
 
-Written using Vue.js with a taste of TypeScript bindings and Vue Class Component (Vue files).
+MarkCollab is a simple collaboration tool for creating various types of documents using Markdown syntax. The main idea is to create a self-hosted Web Application that contains everything to create Markdown documents by many people in the same time.
 
 ## Screenshots
+
+![Editor View](docs/screenshots/editor.png)
+![Sidenav](docs/screenshots/sidenav.png)
